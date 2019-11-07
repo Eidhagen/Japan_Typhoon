@@ -1,5 +1,5 @@
-# run this program with the following comand
-# awk -f bst_all_yyyy_mm_dd.txt bst_all_yyyy_mm_dd_formatted.txt
+# run this program with the following command
+# awk -f parse_bst_all.awk bst_all_yyyy_mm_dd.txt > bst_all_yyyy_mm_dd_formatted.csv
 {
     if ($1 == 66666) {
         date_and_id = $2; id = substr(date_and_id,3,4) 
